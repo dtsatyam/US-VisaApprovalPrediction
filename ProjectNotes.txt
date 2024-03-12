@@ -1,0 +1,69 @@
+Project Overview:
+Understanding the problem statement
+Understanding the solution
+Code understanding and walkthrough
+Understanding the deployment
+
+Under deployment, we use below applications/softwares:
+Docker
+Cloud services
+Adding self hosted runner
+Workflows
+
+===========================================================================
+
+Problem Statement:
+US Visa Approval status
+Given certain set of features such as (Continent, Edu, Job Exp., training, employment, current age etc., ), we have to predict whether the application will be approved or not.
+
+Solution approach:
+Machine Learning - ML Classification algorithm
+Deep learning - Custom ANN with Sigmoid activation
+
+Solution proposed:
+We will be using ML based approach for this.
+
+- Load the data from DB
+- Perform EDA and feature engineering
+- Fit the ML Classification algorithm and findout which one performs better
+- Select top few and perform hyper parameter tuning
+- Select the best model based on desired metrics
+
+==========================================================================
+
+While creating folder structure, first create
+template.py - This contains the structure of the complete project. This is used for creating the structure automatically.
+This file uses, from pathlib import Path
+
+Then we use "from setuptools import setup, find_packages"
+This is for installing required packages from requirements file
+
+Now, create a new environment, visa and activate the env
+conda create -p visa python==3.8 -y
+conda activate visa/
+
+In requirements.txt, we give '-e .'
+This look for setup.py and this file look for constructor files in every folder. And this make the folders as local packages, so that we can import them in any of the local files
+
+Now, just check 'pip list'. This contains the basic packages like pip and setuptools
+Now, if we execute requirements.txt with 'pip install -r requirements.txt', will install all packages.
+Now, do pip list. You can find all packages along with us-visa package
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
